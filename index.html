@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HomeLayout</title>
+	<link rel="stylesheet" href="styleh.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://kit.fontawesome.com/8f65deafa9.js" crossorigin="anonymous"></script>
+   <style type="text/css">
+   	#notification{
+   		background: linear-gradient(to top, #ffff00 0%, #ff6666 100%);
+   		/*background-color: yellow;*/
+   		width: 23.33%;
+   		float: right;
+   		height: 600px;
+   		font-size: 25PX;
+   		word-spacing: 3px;   
+   	}
+   	.back{
+   		background-color: skyblue;
+   		border-radius: 20px;
+   	}
+   	.top a{
+   		text-decoration: none;
+   	}
+
+   	#filter{
+   		background: linear-gradient(to top, #ffff00 0%, #ff6666 100%);
+   		
+   		width: 23.33%;
+   		float: left;
+   		height: 600px;
+        font-size: 25px;
+   		color: black;
+   	}
+   	.backf{
+   		background-color: skyblue;
+   		border-radius: 20px;
+   	}
+   	.right li{
+   		list-style-type: none;
+   	}
+   	.right a{
+   		text-decoration: none;
+   	}
+    /*#slide{
+    	background-color: greenyellow;
+    	width: 45.33%;
+    	margin: 0 auto;
+    	height: 600px;
+    }*/
+    #some{
+    	background: rgb(0, 100, 0);
+    	width: 100%;
+    	height: 70px;
+    	clear: both;
+    	margin: 0 auto;
+    }
+    
+   </style>
+
+</head>
+<body >
+	<div class="div1"> 
+	
+	<div class="container" >
+
+  <img src="img.jpg" class="image">
+  <div class="overlay">
+    <p class="textp">A.DEVI <br> N180473 <br>CSE</p>
+    
+  </div>
+</div>
+	<div class="div2">
+	<h1 class="h2" align="center">WEBPAGE</h1>
+</div>
+</div> 
+
+	<div id="slidenav" class="slidenav">
+      
+      <a href="javascript:void(0)" class="closeicon" id="closeicon" onclick="closnav()">&times;</a>
+		<a href="#">HOME</a>
+		<a href="#">EXAM</a>
+		<a href="#">BRANCH</a>
+		<a href="#">CONTACT</a>
+	</div>
+	<span class="icon" id="menuicon" onclick="opennav()">&#9776;</span>
+
+
+
+		<div class="navbar">
+
+			<ul>
+				<li class="active"><a href="#"><i class='bx bx-home' ></i> HOME</a></li>
+				<li><a href="index.html"><i class='bx bxs-inbox bx-rotate-180' ></i> EXAM</a></li>
+				<li><a href="#"><i class='bx bx-wrench'></i></i> BRANCH</a>
+
+				 <div class="sub-menu">
+				<ul>
+	<li class="hover-me"><a href="#">CSE</a><i class="fa fa-angle-right"></i>
+         <div class="sub-menu2">
+			<ul>
+				<li><a href="#">Faculty</a></li>
+ 				<li> <a href="login.html">Student</a>
+    		 				</li>
+		 		</ul>
+				</div>
+			 </li>
+			<li><a href="#">ECE</a></li>
+			<li><a href="#">MECH</a></li>
+			</ul>
+				</div>
+			</li>
+
+				<li><a href="#"><i class='bx bxs-phone-call' ></i>CONTACT</a>
+				<div class="contact">
+					<ul>
+					<li><a href="map.html">9704323444</a><i class="fa fa-angle-right"></i>
+
+					<li><a href="map.html">6302221134</a><i class="fa fa-angle-right"></i>
+						
+					<li><a href="map.html">9403092921</a><i class="fa fa-angle-right"></i>
+						
+				</li>
+					
+				</div>
+			</ul>
+		 
+		</div>
+
+		
+		 <div id="notification" >
+		 	<div class="back">
+			<marquee ><b>NOTIFICATION</b></marquee>
+			</div>
+		 <div class="top"> 
+			<marquee direction="up"scrollamount="10"><li ><a href="#"><i class='bx bxs-bell' ></i>HTML is  warning  to  your system virus is detected!!!...</a></li><br>
+			<li><a href="#"><i class='bx bxs-bell' ></i>JAVA SCRIPT is warnig to your system virus is detected!!!...</a></li><br>
+		    <li><a href="#"><i class='bx bxs-bell' ></i>jQUERY is  warning  to  your system virus is dedected!!!...</a></li><br>		
+		    <li><a href="#"><i class='bx bxs-bell' ></i>CSS  warning  to  your system virus is detected!!!...</a></li></marquee>
+		 </div> 
+          
+		</div>
+		<div id="filter">
+			<div class="backf">
+			<marquee direction="right"><b>ABOUT COLLEGE LIFE</b></marquee>
+		</div>
+       <div class="right">
+       	<marquee direction="down" scrollamount="10"><li><a href="#"><i class='bx bxs-right-arrow-square'></i>Events in college days remain as everlasting memories..</a></li><br>
+
+       	<li><a href="#"><i class='bx bxs-right-arrow-square'></i>College days are the days when we start enjoying it..</a></li><br>
+
+       	<li><a href="#"><i class='bx bxs-right-arrow-square'></i>College days are completely different from school days..</a></li><br>
+
+       	<li><a href="#"><i class='bx bxs-right-arrow-square'></i>College days remain special in everyone's life..</a></li><br>
+       </marquee>
+       </div>
+
+		</div>
+
+
+		<div class="slideshow-container">
+			<div class="mySlide fade">
+				<!-- <div class="numtext">1/3</div> -->
+				<img src="img1.jpg">
+			</div>
+	
+			<div class="mySlide fade">
+				<!-- <div class="numtext">2/3</div> -->
+				<img src="img2.jpg">
+			</div>
+		
+			<div class="mySlide fade">
+				<!-- <div class="numtext">3/3</div> -->
+				<img src="img3.jpg">
+			</div>
+			<div class="mySlide fade">
+				<img src="img4.jpg">
+			</div>
+			<div class="button">
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+		</div>
+		<br>
+		<div style="text-align: center">
+			<div class="dots">
+			<span class="dot" onclick="currentSlides(1)"></span>
+			<span class="dot" onclick="currentSlides(2)"></span>
+			<span class="dot" onclick="currentSlides(3)"></span>
+			<span class="dot" onclick="currentSlides(4)"></span>
+		</div>
+	</div>
+
+		<div id="some">
+<div class="by">
+			<p>Design by @Devialupana</p></div>
+		<div class="counter">
+			<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=8013442&style=0005&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                    
+                                    
+                                        
+                                          
+                              
+<a href="#"><i class='bx bxs-up-arrow-circle' ></i></a>                          
+            </div>                                           
+        </div>
+
+   <script  src="scripth.js"></script> 
+  <script>
+  	function opennav()
+  	{
+  		document.getElementById("slidenav").style.width="175px";
+
+  		  document.getElementById("menuicon").style.display="block";
+  	}
+  	function closnav()
+  	{
+
+  		document.getElementById("slidenav").style.width="0";
+
+  		document.getElementById("slidenav").style.display="block";
+  	}
+  </script>
+
+</body>
+</html>
