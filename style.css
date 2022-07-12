@@ -1,0 +1,65 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.form_validate{
+	width: 500px;
+	height: auto;
+	background: cyan;
+	margin: 20px auto 350px;
+}
+.form_validate form{
+	padding: 15px;
+}
+.form_validate table tr{
+	width: 100px;
+	height: 40px;
+}
+.form_validate table tr input[type=text],
+.form_validate table tr input[type=number],
+.form_validate table tr input[type=password],
+.form_validate table tr input[type=mail],
+#country,
+.form_validate table tr textarea{
+	font-size: 10px;
+	padding-left: 10px;
+	height: 20px;
+	border: 1;
+	outline: none;
+}
+.form_validate table tr input[type=radio],
+.form_validate table tr input[type=checkbox]{
+	margin: 0 5px 0 0;
+	width: 10px;
+	height: 10px;
+}
+.form_validate table tr label{
+	margin-right: 5px;
+}
+.form_validate table tr textarea{
+	height: 40px;
+	resize: none;
+}
+.sunmit{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	cursor: pointer;
+}
+.submit input[type=submit]{
+	width: 5cm;
+	height: 25px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 20px;
+	background: teal;
+	outline: none;
+	border-radius: 5px;
+	border:0 ;
+	color: red;
+}
+.bx{
+	font-size: 25px;
+}
