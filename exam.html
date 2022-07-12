@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASSIGNMENT</title>
+	<link rel="stylesheet" href="exam11.css">
+</head>
+<body>
+	<div class="container">
+	<center>
+		<table >
+	<div class="mydiv">
+	<h1 class="changecolor" ><u>F1H2O</u><sub>rgukt</sub></h1>
+	 
+	</div>
+	<button onclick="myFunction()">Try it</button>
+	<form action="/shiv.php"  onsubmit="return exam();">
+	<tr><td><label id="un1">USERNAME:</label><input type="text" id="un" name="un" placeholder="enter first name" onchange="UpperCase();"><label style="color:red;visibility:hidden;" id="valid">Invalid Data!!</label></td></tr>
+	<tr><td><label id="em1">EMAIL:</label><input type="text" name="em" id="em" placeholder="enter your mail"><label style="color:red;visibility:hidden;" id="m1">Invalid Mail!!</label></td></tr>
+	<tr><td><label id="mn1">MOBILE:</label><input type="number" name="mn" id="mn" placeholder="mobile number"><label style="color:red;visibility:hidden;" id="mn11">Invalid No.!!</label></td></tr>
+	<tr><td><label id="country">COUNTRY:</label>
+	<label>
+	<select class="countries">
+		<option for="INDIA">INDIA</option>
+		<option for="AMERICA">AMERICA</option>
+		<option for="ENGLAND">ENGLAND</option>
+		<option for="GERMANY">GERMANY</option>
+	</select>
+</label></td></tr>
+
+	<tr><td>BEER:<input type="radio" name="r1" id="yes"><label for="yes">yes</label>
+         <input type="radio" name="r1" id="no"><label for="yes">no</label>
+	<tr><td><label id="pt1">PAYMENT TYPE:</label><input type="text" name="pt" id="pt" placeholder="enter your payment"><label style="color:red;visibility:hidden;" id="pt11">Invalid payment!!</label></td></tr><br><br>
+	<tr><td><label class="accom">ACCOMODATION:</label>
+	<label class="accoms">
+	<input type="radio" value="Nuzvid" name="s" id="radio1"><label for="s">Nuzvid</label>
+	<input type="radio" value="Kadapa" name="s" id="radio2"><label for="s">Kadapa</label>
+	<input type="radio" value="SKLM" name="s" id="radio3"><label for="s">SKLM</label>
+	<in="radio" value="Ongole" name="s" id="radio4"><label for="s">Ongole</label>
+</label></td></tr>
+	<tr><td><label class="services">SERVICES:</label>
+	<label class="service">
+	<input type="checkbox" value="breakfast" name="a" id="a1"><label for="a">breakfast</label>
+	<input type="checkbox" value="lunch" name="b" id="b1"><label for="a">lunch</label>
+	<input type="checkbox" value="snacks" name="c" id="c1"><label for="a">snacks</label>
+	<input type="checkbox" value="Tea" name="d" id="d1"><label for="a">Tea</label>
+	<input type="checkbox" value="Coffee" name="e" id="e1"><label for="a">Coffee</label>
+	<input type="checkbox" value="Eggs" name="f" id="f1"><label for="a">Eggs</label>
+</label></td></tr>
+	<tr><td><label class="sd1">STAYING DAYS:</label><input type="number" name="sd">
+	</td></tr>
+	<tr><td>SUBMIT BUTTON: <button type="SUBMIT" value="SUBMIT">SUBMIT</button></td></tr>
+
+</div>
+</form>
+<script type="text/javascript" src="exam1.js">
+// 	function myFunction() {
+//   document.getElementById("h1").style.backgroundColor = "green";
+// }
+</script>
+<script>
+	function myFunction() {
+  document.getElementById("mydiv").style.backgroundColor = "green";
+}
+	
+</script>
+</table>
+</center>
+</div>
+</body>
+</html>
