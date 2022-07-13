@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+	<center>
+	<h2 class="heading"> STUDENT REGISTRATION FORM</h2>
+	<div class="form_validate">
+		<form action="/jk.php" method="post" onsubmit="return Validating();">
+			<table>
+				<tr>
+					<td>FIRST NAME</td><td><input type="text" id="fname"></td><td><label id="fn" style="color:red; visibility:hidden;">invalid name!</td>
+				</tr>
+				<tr>
+					<td>LAST NAME</td><td><input type="text" id="lname"></td><td><label id="ln" style="color:red; visibility: hidden">invalid name!</td>
+				</tr>
+				<tr>
+					<td>DATE OF BIRTH</td><td><input type="date"></td>
+				</tr>
+				<tr>
+					<td>EMAIL ID</td><td><input type="email" id="email"></td><td><label style="visibility:hidden;" id="m">Invalid MailId</label></td>
+				</tr>
+				<tr>
+					<td>PASSWORD</td><td><input type="password" id="pswd"></td><td><span id="p" style="visibility:hidden;color:red;"></i>Invalid Password</span></td>
+				</tr>
+				<tr><td></td><td><i class='bx bx-hide' onclick="sp();"></i></td></tr>
+				<tr><td>MOBILE NUMBER</td><td><input type="number" id="mobileno"></td><td><label style="color:red;visibility:hidden;" id="pn">valid MobileNo!</label></td>
+				</tr>
+				<tr>
+					<td>GENDER</td><td><input type="radio" name="r1" id="male"><label for="male">Male</label>
+					<input type="radio"name="r1" id="female"><label for="female">Female</label></td>
+					<td><label style="color:red;visibility:hidden;" id="rad">Required</label></td>
+				</tr>
+				<tr>
+					<td>ADDRESS</td><td><textarea rows="5" cols="25" id="addr">Address..,</textarea></td><td><label style="color:red;visibility:hidden;" id="add">Required</label></td>
+				</tr>
+				<tr>
+					<td>CITY</td><td><input type="text" id="city"></td><td><label style="color:red;visibility:hidden;" id="c">Required</label></td>
+				</tr>
+				<tr>
+					<td>COUNTRY</td><td>
+					<select id="country">
+						<option>India</option>
+						<option>USA</option>
+						<option>London</option>
+					
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>HOBBIES</td><td><input type="checkbox" id="drawing"><label for="drawing">reading</label><input type="checkbox" id="singing"><label for="singing">Singing</label><input type="checkbox" id="dance"><label for="dance">Dancing</label></td>
+			</tr>
+			</table>
+			<div class="submit"><input type="submit" value="Submit"></div>
+		</form>
+	</div>
+	<script src="script.js"></script>
+
+</body>
+</center>
+</html>
